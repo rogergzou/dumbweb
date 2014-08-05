@@ -134,6 +134,51 @@ h6 {
     margin-top: 0;
 }
 
+
+
+
+/* no idea what's happening here */
+.span3 {
+	width:220px;
+}
+
+.span3 h4{
+	font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 1;
+	color: #fcfcfc;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding: 5px 0 10px;
+	margin: 25px 10px 10px 0;
+	border-bottom: 1px solid #fcfcfc;
+}
+
+[class*="span"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+}
+
+@media(min-width:1200px) {
+	.span3 {
+		width:270px;
+	}
+	[class*="span"] {
+		float:left;
+		min-height: 1px;
+		margin-left: 30px;
+	}
+}
+
+
+
+
+
+
+
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
