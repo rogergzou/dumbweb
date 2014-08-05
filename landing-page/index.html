@@ -50,13 +50,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about-me">About</a>
+                        <a data-scroll href="#about-me">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a data-scroll href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a data-scroll href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +158,7 @@
 
     <!-- /.content-section-a -->
 
-    <div class="content-section-b">
+    <div class="content-section-b" id="projects">
 
         <div class="container">
 
@@ -192,7 +192,7 @@
                     <p class="lead">Save is a personal finance web app that helps users track expenditures, set limits, and develop better spending habits. It analyzes spending patterns and provides helpful graphs to visualize them. A MySQL database is used to store expenses, limits and user information. Naturally, sensitive information is encrypted and hashed. The database is exportable to Dropbox. The site uses PHPMailer to send account verification emails. You can find it <a target="_blank" href="http://cs50lyfe.info">here</a>. <a target="_blank" href="Save/design.html">Design</a> and <a target="_blank" href="Save/documentation.html">documentation</a> are available.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/Save-websitepic.png" alt="">
+                    <a target="_blank" href="http://cs50lyfe.info"><img style="border:0;" class="img-responsive" src="img/Save-websitepic.png" alt=""></a>
                 </div>
             </div>
 
@@ -288,6 +288,12 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script src="smooth-scroll-master/dist/js/smooth-scroll.js"></script>
+    <script>
+        smoothScroll.init();
+    </script>
 
 </body>
 
